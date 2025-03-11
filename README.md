@@ -22,6 +22,56 @@ React Native QR Code
 
 ## 📸 Screenshots
 
+### Main Wallet Interface
+<div align="center">
+  <img src="./screenshots/home-screen.png" width="280" />
+  <p><strong>Home Screen:</strong> Manage your ARI tokens, view balance, and access quick actions</p>
+</div>
+
+<div align="center">
+  <img src="./screenshots/drawer.png" width="280" />
+  <p><strong>Drawer Menu:</strong> Easy navigation with QR scanner, settings, and wallet management</p>
+</div>
+
+### Transaction Features
+<div align="center">
+  <img src="./screenshots/transaction-screen.png" width="280" />
+  <p><strong>Send Tokens:</strong> Transfer ARI tokens with amount input and address selection</p>
+</div>
+
+<div align="center">
+  <img src="./screenshots/user_address-bottomsheet.png" width="280" />
+  <p><strong>Receive Modal:</strong> Generate and share your wallet address via QR code</p>
+</div>
+
+### Address Book
+<div align="center">
+  <img src="./screenshots/address_book-screen.png" width="280" />
+  <p><strong>Address Book:</strong> Manage your saved wallet addresses with easy CRUD operations</p>
+</div>
+
+<div align="center">
+  <img src="./screenshots/add_address-bottomsheet.png" width="280" />
+  <p><strong>Add/Edit Address:</strong> Bottom sheet for adding or updating wallet addresses</p>
+</div>
+
+### QR Scanner
+<div align="center">
+  <img src="./screenshots/ScanQR-Screen.png" width="280" />
+  <p><strong>QR Scanner:</strong> Scan wallet addresses with centered capture frame and blur effect</p>
+</div>
+
+### Transaction History
+<div align="center">
+  <img src="./screenshots/transaction-screen.png" width="280" />
+  <p><strong>Transaction List:</strong> View your complete transaction history with details</p>
+</div>
+
+<div align="center">
+  <img src="./screenshots/transaction_detail-screen.png" width="280" />
+  <p><strong>Transaction Details:</strong> Detailed view of individual transactions with all metadata</p>
+</div>
+
 ## 🛠️ Installation
 Clone the repository
 ```git clone https://github.com/yourusername/ARI-Wallet-Mobile.git```
