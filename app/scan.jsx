@@ -1,7 +1,7 @@
 import { CameraView, CameraType, useCameraPermissions } from 'expo-camera';
 import { useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Dimensions } from 'react-native';
-import { hp } from '../utils/helper';
+import { hp, wp } from '../utils/helper';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
 
 export default function Scan() {
@@ -19,9 +19,16 @@ export default function Scan() {
         // Camera permissions are not granted yet.
         return (
             <View style={styles.container}>
+                <Stack.Screen options={{
+                    title: "Scan QR",
+                    headerStyle: {
+                        backgroundColor: "#1f2937",
+                    },
+                    headerTintColor: "#fff"
+                }} />
                 <Text style={styles.message}>We need your permission to show the camera</Text>
                 <TouchableOpacity style={{ width: wp(70), padding: hp(2), borderRadius: 100 }} onPress={requestPermission} className="bg-gray-800">
-                    <Text style={{ fontSize: hp(2) }} className="text-white">Grant Permission</Text>
+                    <Text style={{ fontSize: hp(2) }} className="text-white text-center">Grant Permission</Text>
                 </TouchableOpacity>
             </View>
         );
@@ -106,7 +113,6 @@ const CORNER_SIZE = 20;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        // justifyContent: 'center',
     },
     message: {
         textAlign: 'center',
@@ -115,41 +121,13 @@ const styles = StyleSheet.create({
     camera: {
         flex: 1,
     },
-    buttonContainer: {
-        flex: 1,
-        flexDirection: 'row',
-        backgroundColor: 'transparent',
-        margin: 64,
-    },
-    button: {
-        flex: 1,
-        alignSelf: 'flex-end',
-        alignItems: 'center',
-    },
-    text: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        color: 'white',
-    },
-    scanFrame: {
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        width: 200,
-        height: 200,
-        marginLeft: -100, // half of width
-        marginTop: -100,  // half of height
-        borderWidth: 2,
-        borderColor: '#fff',
-        backgroundColor: 'transparent',
-        borderRadius: 10,
-    },
+
     overlayContainer: {
         flex: 1,
     },
     centerRow: {
         flexDirection: 'row',
-        height: WINDOW_SIZE,
+        // height: WINDOW_SIZE,
     },
     overlay: {
         flex: 1,
@@ -158,7 +136,6 @@ const styles = StyleSheet.create({
     scanWindow: {
         width: WINDOW_SIZE,
         height: WINDOW_SIZE,
-        position: 'relative',
     },
     scanText: {
         color: '#fff',

@@ -21,7 +21,7 @@ Expo Camera
 React Native QR Code
 
 ## 📸 Screenshots
-
+git
 ### Main Wallet Interface
 <div align="center">
   <img src="./screenshots/home-screen.png" width="280" />
